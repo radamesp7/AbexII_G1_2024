@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Características dos Usuários</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #007BFF;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 2px solid #007BFF;
+        }
+
+        p.description {
+            background-color: #e9f7fe;
+            border-left: 6px solid #007BFF;
+            padding: 15px;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        thead {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        thead th {
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody td {
+            padding: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        tbody td:first-child {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Tooltip */
+        tbody td {
+            position: relative;
+            cursor: pointer;
+        }
+
+        tbody td:hover::after {
+            content: 'Clique para mais detalhes';
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 12px;
+            white-space: nowrap;
+            border-radius: 3px;
+            opacity: 0.75;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        table, p.description, h2 {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Características dos Usuários</h2>
+
+    <p class="description">
+        Descrevem-se aqui as principais características dos grupos de usuários esperados para o produto, tais como cargo ou função, permissão de acesso, frequência de uso, nível de instrução, proficiência no processo de negócio e proficiência em informática.
+    </p>
+
+    <h2>Principais características dos grupos de usuários esperados:</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Usuários</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Clientes:</td>
+                <td>A gestão eficiente de dados hospitalares é crucial para a melhoria da qualidade do atendimento e a otimização de recursos. Hospitais gerenciam uma quantidade enorme de dados, desde informações de pacientes até logística e administração. A criação de dashboards permite a visualização e análise desses dados de forma clara e acessível, facilitando a tomada de decisões informadas.</td>
+            </tr>
+            <tr>
+                <td>Médicos/Enfermeiros/pacientes</td>
+                <td>A demanda por ferramentas que ajudem na gestão hospitalar surgiu com o aumento da complexidade dos serviços de saúde e a necessidade de melhorar a eficiência operacional. A motivação principal é a de oferecer suporte aos profissionais de saúde, permitindo um acesso rápido e preciso a informações críticas, o que pode salvar vidas e melhorar a experiência do paciente.</td>
+            </tr>
+            <tr>
+                <td>Caixa (Gerentes)</td>
+                <td>Os responsáveis pela supervisão e administração do sistema, gerenciando a quantidade de atendimentos realizados, a proficiência dos internos em relação à rapidez e cautela, bem como o controle das demandas e suas origens.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
